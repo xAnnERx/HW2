@@ -1,36 +1,60 @@
 .button {
+  border-radius: 3px;
+  border: none;
+  padding: 5px 24px 5px 24px;
+  gap: 10px;
+  cursor: pointer;
+  opacity: 0px;
+  background: rgba(0, 128, 255, 1);
 }
 
 .disabled {
+  background: rgba(0, 77, 153, 1);
+  color: rgba(0, 46, 92, 1);
 }
 
 .secondary {
+  color: rgb(255, 255, 255);
+  border: 1px solid rgba(0, 102, 204, 1);
 }
 
 .default {
+  color: rgb(255, 255, 255);
+  border: 1px solid rgb(164, 169, 174);
+  background: rgba(0, 102, 204, 1);
 }
 
 .red {
+  color: rgb(255, 255, 255);
+  background: rgba(204, 20, 57, 1);
 }
 
 .default:hover {
+  background: rgba(0, 128, 255, 1);
 }
 
 .red:hover {
+  background: rgba(255, 26, 71, 1);
 }
 
 .secondary:hover {
+  border: 1px solid rgba(0, 102, 204, 1);
+  background: rgba(229, 240, 250, 1);
 }
 
-
 .default:active {
+  background: rgba(0, 102, 204, 1);
 }
 
 .secondary:active {
+  border: 1px solid rgba(0, 102, 204, 1);
+  background: rgba(201, 229, 255, 1);
 }
 
 .red:active {
+  background: rgba(178, 18, 50, 1);
 }
 
 .button:disabled {
+  background: rgba(0, 77, 153, 1);
 }
