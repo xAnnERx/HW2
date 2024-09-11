@@ -7,7 +7,6 @@
 
 .sidebar.open {
   width: 317px;
-  opacity: 0px;
   position: absolute;
   display: block;
   top: 0;
