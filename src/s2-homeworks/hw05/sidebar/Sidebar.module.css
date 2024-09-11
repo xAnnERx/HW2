@@ -1,25 +1,52 @@
 .sidebar {
+  display: none;
+  background-color: #f0f0f0;
+  padding: 20px;
+  box-shadow: 2px 0 5px rgba(0, 0, 0, 0.1);
 }
 
 .sidebar.open {
+  width: 317px;
+  opacity: 0px;
+  position: absolute;
+  display: block;
+  top: 0;
+  bottom: 0;
 }
 
 .background {
+  background-color: #ffffff;
 }
 
 .nav {
+  margin: 20px 0;
+  width: 145px;
 }
 
 .nav a {
+  color: blue;
+  text-decoration: none;
+  padding: 10px;
+  display: inline-block;
 }
 
 .nav a:hover {
+  text-decoration: underline;
+  color: darkblue;
 }
 
 .nav a.active {
+  color: red;
 }
 .close {
+  color: blue;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  border: none;
 }
 
 .close img {
+  width: 20px;
+  height: 20px;
 }
