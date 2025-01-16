@@ -1,23 +1,45 @@
 .item {
+  /* align-items: center;
+  display: flex;
+  justify-content: center; */
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 25px;
+  border-bottom: 1px solid #eaeaea;
 }
 
 .item:last-of-type {
+  width: 451px;
+  height: 100%;
 }
 
 .users {
+  color: #333;
 }
 
 .buttonsContainer {
+  margin-left: 180px;
+  padding-left: 20px;
+  padding-right: 20px;
 }
 
 .container {
+  cursor: pointer;
+  transition: background-color 0.3s;
+
+  /* gap: 24px; */
+  /* margin-bottom: 32px; */
 }
 
 .thead {
+  color: rgb(0, 255, 98);
 }
 
 .nameCol {
+  color: blue;
 }
 
 .ageCol {
+  color: blueviolet;
 }
