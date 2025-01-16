@@ -12,7 +12,7 @@ export const homeWorkReducer = (
   switch (action.type) {
     case "sort": {
       const sortedState = [...state].sort((a, b) => {
-        if (action.payload === "down") {
+        if (action.payload === "up") {
           return a.name.localeCompare(b.name);
         } else {
           return b.name.localeCompare(a.name);
