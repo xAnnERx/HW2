@@ -1,14 +1,29 @@
 .buttonsContainer {
+  display: flex;
+  color: #777;
+  margin: 10px 0;
 }
 
 .clock {
+  background-color: #fff;
+  border-radius: 10px;
+  box-shadow: 0 4px 5px rgba(0, 0, 0, 0.1);
+  padding: 20px;
+  width: 300px;
+  margin: 20px;
 }
 
 .watch {
+  font-family: Arial, sans-serif;
+  font-size: 2em;
+  color: #333;
 }
 
 .watch strong {
+  color: #007bff;
 }
 
 .more {
+  text-decoration: underline;
+  cursor: pointer;
 }
