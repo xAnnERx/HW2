@@ -43,13 +43,13 @@ function Clock() {
   type Days = "0" | "1" | "2" | "3" | "4" | "5" | "6";
 
   const days = {
-    "0": "Sunday",
-    "1": "Monday",
-    "2": "Tuesday",
-    "3": "Wednesday",
-    "4": "Thursday",
-    "5": "Friday",
-    "6": "Saturday",
+    "0": "Воскресенье",
+    "1": "Понедельник",
+    "2": "Вторник",
+    "3": "Среда",
+    "4": "Четверг",
+    "5": "Пятница",
+    "6": "Суббота",
   };
 
   function getDayName(day: Days): string {
@@ -57,7 +57,7 @@ function Clock() {
   }
   // "date->time"
   const stringTime = date.toLocaleTimeString() || <br />; // часы24:минуты:секунды (01:02:03)/(23:02:03)/(24:00:00)/(00:00:01) // пишут студенты
-  const stringDate = date.toLocaleDateString() || <br />; // день.месяц.год (01.02.2022) // пишут студенты, варианты 01.02.0123/01.02.-123/01.02.12345 не рассматриваем
+  const stringDate = date.toLocaleDateString("ru-RU") || <br />; // день.месяц.год (01.02.2022) // пишут студенты, варианты 01.02.0123/01.02.-123/01.02.12345 не рассматриваем
   // "date->date"
   // день недели на английском, месяц на английском (https://learn.javascript.ru/intl#intl-datetimeformat)
   const stringDay = getDayName(
