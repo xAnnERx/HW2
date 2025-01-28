@@ -43,13 +43,13 @@ function Clock() {
   type Days = "0" | "1" | "2" | "3" | "4" | "5" | "6";
 
   const days = {
-    "0": "Воскресенье",
-    "1": "Понедельник",
-    "2": "Вторник",
-    "3": "Среда",
-    "4": "Четверг",
-    "5": "Пятница",
-    "6": "Суббота",
+    "0": "Sunday",
+    "1": "Monday",
+    "2": "Tuesday",
+    "3": "Wednesday",
+    "4": "Thursday",
+    "5": "Friday",
+    "6": "Saturday",
   };
 
   function getDayName(day: Days): string {
@@ -63,7 +63,7 @@ function Clock() {
   const stringDay = getDayName(
     date.getDay().toLocaleString("ru-Ru") as Days
   ) || <br />; // пишут студенты
-  const stringMonth = date.toLocaleString("ru-Ru", { month: "long" }) || <br />; // пишут студенты
+  const stringMonth = date.toLocaleString("en-EN", { month: "long" }) || <br />; // пишут студенты
   // date.toLocalString("en-Us")"date->month"
 
   return (
