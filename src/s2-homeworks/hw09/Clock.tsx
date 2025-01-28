@@ -63,7 +63,7 @@ function Clock() {
   const stringDay = getDayName(
     date.getDay().toLocaleString("ru-Ru") as Days
   ) || <br />; // пишут студенты
-  const stringMonth = date.toLocaleString("en-US", { month: "long" }) || <br />; // пишут студенты
+  const stringMonth = date.toLocaleString("ru-Ru", { month: "long" }) || <br />; // пишут студенты
   // date.toLocalString("en-Us")"date->month"
 
   return (
