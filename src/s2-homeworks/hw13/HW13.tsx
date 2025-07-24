@@ -60,14 +60,14 @@ const HW13 = () => {
           } else {
             setCode("Error!");
             setImage(errorUnknown);
-            setText(e.message || "Неизвестная ошибка");
-            setInfo("Проверьте подключение к интернету");
+            setText(e.message || "Network Error");
+            setInfo("Axios Error");
           }
         } else {
           setCode("Error!");
           setImage(errorUnknown);
-          setText(e.message || "Неизвестная ошибка");
-          setInfo("Проверьте подключение к интернету");
+          setText(e.message || "Network Error");
+          setInfo("Axios Error");
         }
       })
       .finally(() => {
