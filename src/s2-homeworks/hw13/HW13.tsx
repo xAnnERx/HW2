@@ -31,10 +31,12 @@ const HW13 = () => {
     setImage("");
     setText("");
     setInfo("...loading");
+    setIsLoading(true);
 
     axios
       .post(url, { success: x })
       .then((res) => {
+        setIsLoading(true);
         setCode("Код 200!");
         setImage(success200);
         setText(res.data.errorText || "Успешный запрос");
@@ -55,6 +57,11 @@ const HW13 = () => {
             setImage(error500);
             setText(e.response.data.errorText || "Ошибка сервера");
             setInfo(e.response.data.info || "Попробуйте позже");
+          } else {
+            setCode("Error!");
+            setImage(errorUnknown);
+            setText(e.message || "Неизвестная ошибка");
+            setInfo("Проверьте подключение к интернету");
           }
         } else {
           setCode("Error!");
